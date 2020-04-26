@@ -12,6 +12,7 @@ const App = () => {
 
   return (
     <div className="app">
+      Will the routes show
       <HashRouter>
         <Route path="/" exact component={SongsList} />
         <Route path="/song" component={showSong} />
