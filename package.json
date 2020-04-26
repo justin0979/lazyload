@@ -7,7 +7,8 @@
     "start": "webpack-dev-server",
     "build": "webpack",
     "lint": "npm run clean && eslint .",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf dist",
+    "deploy": "npm run build && git subtree push --prefix dist origin gh-pages"
   },
   "keywords": [],
   "author": "",
