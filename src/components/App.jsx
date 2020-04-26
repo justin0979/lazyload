@@ -1,5 +1,5 @@
 import React, { Suspense, lazy } from "react";
-import { BrowserRouter, Route, Link } from "react-router-dom";
+import { HashRouter, Route, Link } from "react-router-dom";
 import SongsList from "./SongsList";
 const Song = lazy(() => import("./Song"));
 
@@ -12,10 +12,10 @@ const App = () => {
 
   return (
     <div className="app">
-      <BrowserRouter>
+      <HashRouter>
         <Route path="/" exact component={SongsList} />
         <Route path="/song" component={showSong} />
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 };
