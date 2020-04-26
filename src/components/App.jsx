@@ -1,5 +1,5 @@
 import React, { Suspense, lazy } from "react";
-import { HashRouter, Route, Link } from "react-router-dom";
+import { HashRouter, Route } from "react-router-dom";
 import SongsList from "./SongsList";
 const Song = lazy(() => import("./Song"));
 
