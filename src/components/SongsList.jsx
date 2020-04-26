@@ -26,7 +26,7 @@ const SongsList = (props) => {
                   props.selectSong(song);
                 }}
               >
-                Select
+                Select Song
               </button>
             </li>
           );
